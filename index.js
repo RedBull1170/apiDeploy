@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const conexion = require('./conexion');
 const swaggerJsdoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
-
+require("dotenv").config()
 const app = express();
 
 app.use(function (req, res, next) {
