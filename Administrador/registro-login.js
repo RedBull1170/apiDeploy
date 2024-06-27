@@ -1,4 +1,4 @@
-const bcrypt = require('bcrypt');
+//const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken'); // Importa el módulo JWT para manejar tokens
 const nodemailer = require('nodemailer'); // Importa el módulo Nodemailer para enviar correos electrónicos
 
@@ -21,8 +21,8 @@ module.exports = function (app, conexion) {
             sede: req.body.sede,
         };
     
-        const hashedPassword = await bcrypt.hash(users.password, 10);
-        users.password = hashedPassword;
+        //const hashedPassword = await bcrypt.hash(users.password, 10);
+        //users.password = hashedPassword;
     
         // Verificar correo electrónico
         const emailQuery = `SELECT * FROM users WHERE email='${users.email}'`;

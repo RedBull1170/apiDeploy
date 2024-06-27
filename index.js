@@ -43,19 +43,19 @@ const specs = swaggerJsdoc(options);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 
 // Definir los endpoints
-require('./Adminstrador/roles')(app, conexion);
-require('./Adminstrador/pqrs')(app, conexion);
-require('./Adminstrador/registro-login')(app, conexion);
-require('./Adminstrador/agenda')(app, conexion);
-require('./Adminstrador/sedes')(app, conexion);
-require('./Adminstrador/especialidades')(app, conexion);
-require('./Adminstrador/citas')(app, conexion);
-require('./Adminstrador/formulas')(app, conexion);
-require('./Adminstrador/ordenes')(app, conexion);
-require('./Adminstrador/examenes')(app, conexion);
-require('./Adminstrador/incapacidad')(app, conexion);
-require('./Adminstrador/users')(app, conexion);
-require('./Adminstrador/encuestas')(app, conexion);
+require('./Administrador/roles')(app, conexion);
+require('./Administrador/pqrs')(app, conexion);
+require('./Administrador/registro-login')(app, conexion);
+require('./Administrador/agenda')(app, conexion);
+require('./Administrador/sedes')(app, conexion);
+require('./Administrador/especialidades')(app, conexion);
+require('./Administrador/citas')(app, conexion);
+require('./Administrador/formulas')(app, conexion);
+require('./Administrador/ordenes')(app, conexion);
+require('./Administrador/examenes')(app, conexion);
+require('./Administrador/incapacidad')(app, conexion);
+require('./Administrador/users')(app, conexion);
+require('./Administrador/encuestas')(app, conexion);
 
 
 
