@@ -79,7 +79,7 @@
  */
 
 
-const bcrypt = require('bcrypt');
+//const bcrypt = require('bcrypt');
 
 module.exports = function (app, conexion) {
     
@@ -196,8 +196,8 @@ module.exports = function (app, conexion) {
         };
     
         // Hash de la contraseña
-        const hashedPassword = await bcrypt.hash(users.password, 10);
-        users.password = hashedPassword;
+        //const hashedPassword = await bcrypt.hash(users.password, 10);
+        //users.password = hashedPassword;
     
         // Verificar si el documento ya está registrado
         const documentoQuery = `SELECT * FROM users WHERE documento='${users.documento}'`;
